@@ -1,5 +1,22 @@
+<!--
+ * The contents of this file are subject to the terms of the Common Development and
+ * Distribution License (the License). You may not use this file except in compliance with the
+ * License.
+ *
+ * You can obtain a copy of the License at legal/CDDLv1.0.txt. See the License for the
+ * specific language governing permission and limitations under the License.
+ *
+ * When distributing Covered Software, include this CDDL Header Notice in each file and include
+ * the License file at legal/CDDLv1.0.txt. If applicable, add the following below the CDDL
+ * Header, with the fields enclosed by brackets [] replaced by your own identifying
+ * information: "Portions copyright [year] [name of copyright owner]".
+ *
+ * Copyright 2018 ForgeRock AS.
+-->
 Read me for the sample self service math stage
 ==============================================
+
+This project demonstrates how to modify the self service functionality of [ForgeRock](https://www.forgerock.com/)'s Identity Platoform. 'Self Service' allows users to self register and perform password reset without any need to email admins of a service and is an essential part of any identity management solution.
 
 This sample project creates a new stage to be used within the forgotten password flow.
 
@@ -29,7 +46,7 @@ properties files will need to be located under the exploded AM war:
 `./WEB-INF/classes/selfService.properties`  
 `./WEB-INF/classes/selfService.section.properties`
 
-The selfService.properties file is used to define the localisation strings, like so:
+The selfService.properties file is used to define the localisation strings, like so:  
 `math.left.side=Left hand side`  
 `math.right.side=Right hand side`
 
