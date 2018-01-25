@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2018 ForgeRock AS. All Rights Reserved
+
+  Use of this code requires a commercial software license with ForgeRock AS.
+  or with one of its affiliates. All use shall be exclusively subject
+  to such license between the licensee and ForgeRock AS.
+-->
+<!DOCTYPE ServicesConfiguration
+        PUBLIC "=//iPlanet//Service Management Services (SMS) 1.0 DTD//EN"
+        "jar://com/sun/identity/sm/sms.dtd">
+
+<ServicesConfiguration>
+    <Service name="selfService" version="1.0">
+        <Schema
+                serviceHierarchy="/DSAMEConfig/selfService"
+                i18nFileName="selfService"
+                revisionNumber="1"
+                resourceName="selfService"
+                i18nKey="self-service-description">
+
+            <Organization>
+                <AttributeSchema name="selfServiceMathLeftSide"
+                                 type="single"
+                                 syntax="number_range" rangeStart="0" rangeEnd="1000000"
+                                 resourceName="mathLeftSide"
+                                 i18nKey="math.left.side"
+                                 order="5">
+                    <IsOptional/>
+                    <DefaultValues>
+                        <Value>15</Value>
+                    </DefaultValues>
+                </AttributeSchema>
+                <AttributeSchema name="selfServiceMathRightSide"
+                                 type="single"
+                                 syntax="number_range" rangeStart="0" rangeEnd="1000000"
+                                 resourceName="mathRightSide"
+                                 i18nKey="math.right.side"
+                                 order="6">
+                    <IsOptional/>
+                    <DefaultValues>
+                        <Value>15</Value>
+                    </DefaultValues>
+                </AttributeSchema>
+            </Organization>
+        </Schema>
+    </Service>
+</ServicesConfiguration>
